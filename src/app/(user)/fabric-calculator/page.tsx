@@ -193,8 +193,8 @@ const handleFabricChange = (
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h2 className="text-xl font-semibold text-gray-700 mb-4">Markup & Biaya (%)</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            <div>
-              <label className="block text-sm font-medium text-gray-600 mb-2">Target Margin Bersih</label>
+            <div className="flex flex-col">
+              <label className="block text-sm font-medium text-gray-600 mb-2 min-h-[40px] flex items-end">Target Margin Bersih</label>
               <input
                 type="number"
                 step="0.1"
@@ -204,8 +204,8 @@ const handleFabricChange = (
                 placeholder="12"
               />
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-600 mb-2">Biaya Overhead</label>
+            <div className="flex flex-col">
+              <label className="block text-sm font-medium text-gray-600 mb-2 min-h-[40px] flex items-end">Biaya Overhead</label>
               <input
                 type="number"
                 step="0.1"
@@ -215,8 +215,8 @@ const handleFabricChange = (
                 placeholder="7"
               />
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-600 mb-2">Toleransi Adds</label>
+            <div className="flex flex-col">
+              <label className="block text-sm font-medium text-gray-600 mb-2 min-h-[40px] flex items-end">Toleransi Adds</label>
               <input
                 type="number"
                 step="0.1"
@@ -226,8 +226,8 @@ const handleFabricChange = (
                 placeholder="6"
               />
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-600 mb-2">Admin Fee Shopee</label>
+            <div className="flex flex-col">
+              <label className="block text-sm font-medium text-gray-600 mb-2 min-h-[40px] flex items-end">Admin Fee Shopee</label>
               <input
                 type="number"
                 step="0.1"
@@ -237,8 +237,8 @@ const handleFabricChange = (
                 placeholder="20"
               />
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-600 mb-2">Risiko Waste/Shrinkage</label>
+            <div className="flex flex-col">
+              <label className="block text-sm font-medium text-gray-600 mb-2 min-h-[40px] flex items-end">Risiko Waste/Shrinkage</label>
               <input
                 type="number"
                 step="0.1"
@@ -248,8 +248,8 @@ const handleFabricChange = (
                 placeholder="1"
               />
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-600 mb-2">Pembulatan (Rp)</label>
+            <div className="flex flex-col">
+              <label className="block text-sm font-medium text-gray-600 mb-2 min-h-[40px] flex items-end">Pembulatan (Rp)</label>
               <input
                 type="number"
                 value={pembulatan}
