@@ -296,10 +296,6 @@ const handleFabricChange = (
                     <span className="text-gray-600">Harga Jual per ½ Meter:</span>
                     <span className="font-bold text-green-600">Rp {results.hargaJualSetengahMeter.toFixed(2)}</span>
                   </div>
-                  <div className="flex justify-between pt-2 border-t border-gray-200">
-                    <span className="text-gray-600">Kenaikan per Yard:</span>
-                    <span className="font-semibold text-blue-600">Rp {results.kenaikan.toFixed(2)}</span>
-                  </div>
                 </div>
               </div>
             </div>
