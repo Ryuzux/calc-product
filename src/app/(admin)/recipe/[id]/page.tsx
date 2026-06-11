@@ -2,14 +2,14 @@
 import { notFound } from "next/navigation";
 
 interface PdfViewerPageProps {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
-export default async function PdfViewerPage({ params }: PdfViewerPageProps) {
-  const id = Number(params.id);
-  const file = await getPdfById(id);
+export default async function PdfViewerPage(props: PdfViewerPageProps) {
+  const { id } = await props.params;
+  const numId = Number(id);
+  const file = await getPdfById(numId);
 
   if (!file) return notFound();
 
